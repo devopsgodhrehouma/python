@@ -24,6 +24,8 @@ Apprenez par cœur, répétez, testez-vous. Cela doit devenir automatique.
 3. Remplace le deuxième élément (`20`) par `25`.
 4. Supprime le dernier élément de la liste sans utiliser `del`.
 5. Écris une fonction `somme_liste(liste)` qui prend une liste de nombres et retourne la somme des éléments.
+6. Définir une autre liste `notes` contenant les valeurs `[50, 60]` et calculer la somme des notes en utilisant la fonction `somme_liste` que vous avez développé.
+7. Définir une autre liste de votre choix et calculez sa somme en utilisant la fonction `somme_liste`.
 
 ### **Correction attendue :**
 ```python
