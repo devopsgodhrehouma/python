@@ -87,20 +87,52 @@ afficher_info(eleve)
 ```
 ---
 
+
+
 ## **3️⃣ Exercice 3 : Compréhension de listes**
-📌 **Objectif** : Utiliser les **compréhensions de listes** pour manipuler les données de manière concise.
+📌 **Objectif** : Comprendre d'abord les **boucles classiques**, puis apprendre à utiliser les **compréhensions de listes** pour manipuler les données de manière concise.
 
 ### **Enoncé :**
 1. Crée une liste `nombres` contenant les nombres de `1` à `10`.
-2. Utilise une **compréhension de liste** pour créer une liste `carrés` contenant le carré de chaque nombre.
-3. Crée une **compréhension de liste** qui ne garde que les nombres pairs de la liste `nombres`.
+2. Crée une liste `carrés` contenant le carré de chaque nombre.
+3. Crée une liste `pairs` contenant uniquement les nombres pairs de la liste `nombres`.
 4. Écris une fonction `filtrer_sup_5(liste)` qui retourne une nouvelle liste contenant uniquement les nombres supérieurs à `5`.
 
 ### **Correction attendue :**
+#### 🔹 **Solution sans compréhension de listes**
 ```python
 # Étape 1 : Liste des nombres de 1 à 10
 nombres = list(range(1, 11))
 
+# Étape 2 : Liste des carrés (avec boucle)
+carrés = []
+for x in nombres:
+    carrés.append(x ** 2)
+
+# Étape 3 : Liste des nombres pairs (avec boucle)
+pairs = []
+for x in nombres:
+    if x % 2 == 0:
+        pairs.append(x)
+
+# Étape 4 : Fonction de filtrage (avec boucle)
+def filtrer_sup_5(liste):
+    resultat = []
+    for x in liste:
+        if x > 5:
+            resultat.append(x)
+    return resultat
+
+# Tests
+print(carrés)  # Output: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+print(pairs)   # Output: [2, 4, 6, 8, 10]
+print(filtrer_sup_5(nombres))  # Output: [6, 7, 8, 9, 10]
+```
+
+---
+
+#### 🔹 **Solution avec compréhension de listes**
+```python
 # Étape 2 : Liste des carrés
 carrés = [x ** 2 for x in nombres]
 
@@ -116,6 +148,21 @@ print(carrés)  # Output: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 print(pairs)   # Output: [2, 4, 6, 8, 10]
 print(filtrer_sup_5(nombres))  # Output: [6, 7, 8, 9, 10]
 ```
+
+---
+
+### **Explication pédagogique**
+🔹 **Approche sans compréhension de liste** :  
+- Montre le fonctionnement des boucles `for`.
+- Rend explicite l'ajout des éléments dans une nouvelle liste (`append()`).
+
+🔹 **Approche avec compréhension de liste** :  
+- Introduit une notation plus concise et plus efficace.
+- Permet de réduire le code tout en gardant une bonne lisibilité.
+
+
+
+
 ---
 
 ## **4️⃣ Exercice 4 : Manipulation des tuples**
