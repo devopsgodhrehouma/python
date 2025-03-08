@@ -133,6 +133,8 @@ print(filtrer_sup_5(nombres))  # Output: [6, 7, 8, 9, 10]
 # Étape 1 : Création du tuple
 jours = ("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi")
 
+print(type(jours)) # <class 'tuple'>
+
 # Étape 2 : Affichage du troisième jour
 print(jours[2])  # Output: "Mercredi"
 
@@ -141,8 +143,10 @@ print(jours[2])  # Output: "Mercredi"
 
 # Étape 4 : Conversion en liste et modification
 jours_liste = list(jours)
+print(type(jours_liste)) # <class 'list'>
 jours_liste.append("Dimanche")
 jours = tuple(jours_liste)
+print(type(jours)) # <class 'tuple'>
 
 # Étape 5 : Fonction pour trouver le mot le plus long
 def plus_long_mot(mots):
