@@ -87,9 +87,51 @@ afficher_info(eleve)
 ```
 ---
 
+## **3️⃣ Exercice 3 : Manipulation des tuples**
+📌 **Objectif** : Comprendre la **non-mutabilité** des tuples et leur utilité.
+
+### **Enoncé :**
+1. Crée un tuple `jours` contenant les jours de la semaine.
+2. Affiche le **troisième jour** du tuple.
+3. Tente de modifier un élément du tuple et note l’erreur obtenue.
+4. Convertis le tuple en **liste**, ajoute `"Dimanche"`, puis reconvertis-le en tuple.
+5. Écris une fonction `plus_long_mot(mots)` qui prend un tuple de mots et retourne le mot le plus long.
+
+### **Correction attendue :**
+```python
+# Étape 1 : Création du tuple
+jours = ("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi")
+
+print(type(jours)) # <class 'tuple'>
+
+# Étape 2 : Affichage du troisième jour
+print(jours[2])  # Output: "Mercredi"
+
+# Étape 3 : Tentative de modification (génère une erreur)
+# jours[2] = "Dimanche"  # TypeError: 'tuple' object does not support item assignment
+
+# Étape 4 : Conversion en liste et modification
+jours_liste = list(jours)
+print(type(jours_liste)) # <class 'list'>
+jours_liste.append("Dimanche")
+jours = tuple(jours_liste)
+print(type(jours)) # <class 'tuple'>
+
+# Étape 5 : Fonction pour trouver le mot le plus long
+def plus_long_mot(mots):
+    return max(mots, key=len)
+
+# Test
+mots = ("Python", "Programmation", "Code", "Développement")
+print(plus_long_mot(mots))  # Output: "Développement"
+```
+---
 
 
-## **3️⃣ Exercice 3 : Compréhension de listes**
+
+
+
+## 4️⃣ ** Exercice 4 : Compréhension de listes**
 📌 **Objectif** : Comprendre d'abord les **boucles classiques**, puis apprendre à utiliser les **compréhensions de listes** pour manipuler les données de manière concise.
 
 ### **Enoncé :**
@@ -162,47 +204,6 @@ print(filtrer_sup_5(nombres))  # Output: [6, 7, 8, 9, 10]
 
 
 
-
----
-
-## **4️⃣ Exercice 4 : Manipulation des tuples**
-📌 **Objectif** : Comprendre la **non-mutabilité** des tuples et leur utilité.
-
-### **Enoncé :**
-1. Crée un tuple `jours` contenant les jours de la semaine.
-2. Affiche le **troisième jour** du tuple.
-3. Tente de modifier un élément du tuple et note l’erreur obtenue.
-4. Convertis le tuple en **liste**, ajoute `"Dimanche"`, puis reconvertis-le en tuple.
-5. Écris une fonction `plus_long_mot(mots)` qui prend un tuple de mots et retourne le mot le plus long.
-
-### **Correction attendue :**
-```python
-# Étape 1 : Création du tuple
-jours = ("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi")
-
-print(type(jours)) # <class 'tuple'>
-
-# Étape 2 : Affichage du troisième jour
-print(jours[2])  # Output: "Mercredi"
-
-# Étape 3 : Tentative de modification (génère une erreur)
-# jours[2] = "Dimanche"  # TypeError: 'tuple' object does not support item assignment
-
-# Étape 4 : Conversion en liste et modification
-jours_liste = list(jours)
-print(type(jours_liste)) # <class 'list'>
-jours_liste.append("Dimanche")
-jours = tuple(jours_liste)
-print(type(jours)) # <class 'tuple'>
-
-# Étape 5 : Fonction pour trouver le mot le plus long
-def plus_long_mot(mots):
-    return max(mots, key=len)
-
-# Test
-mots = ("Python", "Programmation", "Code", "Développement")
-print(plus_long_mot(mots))  # Output: "Développement"
-```
 ---
 
 ## **5️⃣ Exercice 5 : Boucles et conditions**
