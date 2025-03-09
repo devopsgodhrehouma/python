@@ -1,4 +1,4 @@
-### 40 Exercices pédagogiques en Python : Boucles `while`, `for`, et Fonctions (avec et sans `lambda`)
+### 60 Exercices pédagogiques en Python : Boucles `while`, `for`, et Fonctions (avec et sans `lambda`)
 
 ---
 
@@ -49,6 +49,10 @@
 
 ### 4. Exercices sur les fonctions `lambda`
 
+- Récrire les fonctions ci-haut en utilisant la syntaxe `lambda`.
+
+### 5. Plus Exercices sur les fonctions `lambda`
+
 31. Écrire une fonction `lambda` qui prend un nombre et retourne son double.
 32. Écrire une fonction `lambda` qui prend deux nombres et retourne leur somme.
 33. Écrire une fonction `lambda` qui prend une chaîne et retourne sa longueur.
@@ -59,3 +63,8 @@
 38. Utiliser `sorted()` avec `lambda` pour trier une liste de tuples `[(2, "b"), (1, "a"), (3, "c")]` par le premier élément.
 39. Utiliser `reduce()` avec `lambda` pour calculer le produit des éléments d'une liste `[1, 2, 3, 4]`.
 40. Écrire une fonction `lambda` qui retourne `True` si un mot commence par une voyelle, sinon `False`.
+
+
+### 6. Plus Exercices sur les fonctions  classiques (`def`)
+
+- Récrire les fonctions ci-haut en utilisant la syntaxe `def`.
