@@ -1,5 +1,10 @@
 ### 60 Exercices pédagogiques en Python : Boucles `while`, `for`, et Fonctions (avec et sans `lambda`)
 
+
+## Instructions :
+
+- Faites les 3 premiers de chaque catégorie (18 exercices obligatoires)
+
 ---
 
 ### 1. Exercices sur `while`
