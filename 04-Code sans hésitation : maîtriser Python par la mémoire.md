@@ -262,6 +262,11 @@ Voici une **meilleure présentation** avec les codes **côte à côte** en utili
 
 ### **🔹 Création de la liste `nombres`**
 🔴 **Sans compréhension de listes**  
+
+```python
+nombres = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+
 🟢 **Avec compréhension de listes**
 ```python
 nombres = list(range(1, 11))
