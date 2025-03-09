@@ -131,7 +131,7 @@ print(plus_long_mot(mots))  # Output: "Développement"
 
 
 
-## 4️⃣ ** Exercice 4 : Compréhension de listes**
+## 4️⃣ **Exercice 4 : Compréhension de listes**
 📌 **Objectif** : Comprendre d'abord les **boucles classiques**, puis apprendre à utiliser les **compréhensions de listes** pour manipuler les données de manière concise.
 
 ### **Enoncé :**
