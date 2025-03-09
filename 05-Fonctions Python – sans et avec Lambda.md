@@ -1,4 +1,4 @@
-# 🚩 **Titre du cours : Fonctions Python – sans et avec Lambda**
+# 🚩 **Fonctions Python – sans et avec Lambda**
 
 **Description** :  
 Ce cours pédagogique est conçu pour les débutants. Vous apprendrez à créer des fonctions classiques claires et réutilisables, puis découvrirez ce qu'est une fonction lambda, en quoi elle est utile, et comment l’utiliser simplement.
