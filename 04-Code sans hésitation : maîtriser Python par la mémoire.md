@@ -246,3 +246,86 @@ while mot_de_passe != "Python123":
 print("Accès autorisé !")
 ```
 ---
+
+
+---
+# Annexe - exercice 4
+---
+
+
+
+### **📌 Exercice 4 : Comparaison entre Boucles et Compréhensions de Listes**
+
+Voici une **meilleure présentation** avec les codes **côte à côte** en utilisant un format en **deux colonnes distinctes**.
+
+---
+
+### **🔹 Création de la liste `nombres`**
+🔴 **Sans compréhension de listes**  
+🟢 **Avec compréhension de listes**
+```python
+nombres = list(range(1, 11))
+```
+⬅ **Identique** ➡
+```python
+nombres = [x for x in range(1, 11)]
+```
+
+---
+
+### **🔹 Carrés des nombres**
+🔴 **Sans compréhension de listes**
+```python
+carrés = []
+for x in nombres:
+    carrés.append(x ** 2)
+```
+🟢 **Avec compréhension de listes**
+```python
+carrés = [x ** 2 for x in nombres]
+```
+
+---
+
+### **🔹 Extraction des nombres pairs**
+🔴 **Sans compréhension de listes**
+```python
+pairs = []
+for x in nombres:
+    if x % 2 == 0:
+        pairs.append(x)
+```
+🟢 **Avec compréhension de listes**
+```python
+pairs = [x for x in nombres if x % 2 == 0]
+```
+
+---
+
+### **🔹 Filtrer les nombres > 5**
+🔴 **Sans compréhension de listes**
+```python
+def filtrer_sup_5(liste):
+    resultat = []
+    for x in liste:
+        if x > 5:
+            resultat.append(x)
+    return resultat
+```
+🟢 **Avec compréhension de listes**
+```python
+filtrer_sup_5 = lambda liste: [x for x in liste if x > 5]
+```
+
+---
+
+💡 **Explication rapide** :  
+✅ **Compréhensions de listes** permettent d'écrire du code **plus compact** et **plus lisible**.  
+✅ Plus performant car **optimisé en interne** dans Python.  
+
+
+
+
+
+
+
